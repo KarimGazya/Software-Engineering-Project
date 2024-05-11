@@ -1,0 +1,392 @@
+body {
+    background-color: #f8fafc;
+}
+
+.container {
+    display: flex;
+    margin: 50px 10px;
+    
+}
+
+.side-header {
+    font-family: "Patrick Hand", cursive;
+    font-size: 25px;
+    margin: 0; 
+}
+
+.profile {
+    flex: 1;
+    margin-right: 10px;
+    background-color: white;
+    box-shadow: rgba(0,0,0,0.16) 0px 1px 4px;
+    border-radius: 5px;
+    height: max-content;
+}
+
+.profile-header {
+    display: flex;
+    margin: 25px;
+    align-items: center;
+}
+
+.profile-img-container {
+    margin-right: 20px;
+    position: relative;
+}
+
+.profile-img-container img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.profile-camera {
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    background: #3dcc97;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.profile-camera i {
+    font-size: 16px;
+    color: #fff;
+}
+
+.profile-upload {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.profile-text-container {
+    line-height: 1.5;
+}
+
+.profile-title {
+    font-family: "Patrick Hand", cursive;
+    font-size: 25px;
+    margin: 0; 
+}
+
+.profile-email {
+    font-family: "Patrick Hand", cursive;
+    font-size: 16px;
+    margin: 0;
+}
+
+
+.menu {
+    margin: 0 25px;
+}
+
+.menu-link {
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    color: #768499;
+    font-family: "Patrick Hand", cursive;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    text-align: left;
+}
+
+.menu-icon {
+    margin-right: 10px;
+}
+
+.menu-link:hover {
+    background-color: #3dcc97;
+    color: #1e293b;
+    text-decoration: none;
+}
+
+.menu-link.selected {
+    background-color: #3dcc97;
+    color: #f8fafc;
+}
+
+.account {
+    flex: 2;
+    margin-left: 10px;
+    background-color: white;
+    box-shadow: rgba(0,0,0,0.16) 0px 1px 4px;
+    border-radius: 5px;
+}
+
+.account-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #768499;
+}
+
+.account-title {
+    font-family: "Patrick Hand", cursive;
+    font-size: 25px;
+    color: #1e293b;
+    font-weight: 500;
+    margin-left: 10px
+}
+
+.btn-container {
+    margin-right: 5px;
+}
+
+.btn-save {
+    width: 7em;
+    height: 2.5em;
+    cursor: pointer;
+    border: 1px solid #768499;
+    border-radius: 2em;
+    color: white;
+    font-weight: bold;
+    margin-right: 5px;
+    background-color: #3dcc97;
+    transition-duration: 0.3s;
+    box-shadow: rgba(0,0,0,0.1);
+}
+
+.btn-save:hover {
+    background-color: #298a5d;
+}
+
+.account-edit {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 25px;
+}
+
+.gender-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.gender-container label {
+    font-family: "Patrick Hand", cursive;
+    font-size: 20px;
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+.gender-radio {
+    display: none;
+}
+
+.gender-radio + .gender-label::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #3dcc97;
+    margin-right: 8px;
+}
+
+.gender-radio:checked + .gender-label::before {
+    background-color: #3dcc97;
+}
+
+.gender-label {
+    cursor: pointer;
+}
+
+.input-container label {
+    font-family: "Patrick Hand", cursive;
+    color:#768499;
+    font-size: 18px;
+}
+
+.input-container input {
+    height: 40px;
+    border: 1.5px solid #768499;
+    border-radius: 5px;
+    padding: 5px;
+    color:#1e293b;
+    font-family: "Patrick Hand", cursive;
+}
+
+.input-container input:focus {
+    outline: none;
+    border: 1.5px solid #3dcc97;
+}
+
+.input-container textarea {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    border: 1.5px solid #768499;
+    border-radius: 5px;
+    color:#1e293b;
+    font-family: "Patrick Hand", cursive;
+}
+
+.input-container textarea:focus {
+    outline: none;
+    border: 1.5px solid #3dcc97;
+}
+
+.confirmation-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
+    z-index: 1000;
+}
+
+.confirmation-box p {
+    margin: 0 0 20px;
+    font-family: "Patrick Hand", cursive;
+    font-size: 20px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-container button {
+    margin: 0 10px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.logout-btn {
+    background-color: #ab1411;
+    color: #ffffff;
+}
+
+.cancel-btn {
+    background-color: #3dcc97;
+    color: #ffffff;
+}
+
+.hidden {
+    display: none;
+}
+
+.role-selection {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.role-option {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.role-option label {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.role-option label i {
+    margin-right: 10px;
+}
+
+.role-option input[type="radio"] {
+    display: none;
+}
+
+.role-option input[type="radio"]:checked + label {
+    background-color: #3dcc97;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .profile {
+        margin-bottom: 25px;
+        margin-right: 0;
+    }
+
+    .account {
+        margin: 0;
+    }
+
+    .account-header {
+        flex-direction: column;
+    }
+
+    .account-edit{
+        flex-direction: column;
+        margin: 10px
+    }
+
+    .input-container input {
+        margin-right: 10px;
+    }
+
+    .input-container textarea {
+        display: block;
+        width: auto;
+        margin-right: 10px;
+    }
+
+    .role-selection {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.clinic-link {
+    color: blue; /* Change link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+    /* Add more styles as needed */
+}
+
+.clinic-link:hover {
+    color: darkblue; /* Change link color on hover */
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
