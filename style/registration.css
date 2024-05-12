@@ -1,0 +1,73 @@
+
+.middle-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* Adjust as needed */
+}
+
+.OrganizationCard {
+  width: 220px; /* Adjust width as needed */
+  height: 350px;
+  margin: 0 10px;
+  
+  
+  }
+  .OrganizationCard:hover {
+    border: 4px solid  rgb(61, 204, 151); /* Thick border */
+    border-radius: 10px;
+    border-color: rgb(61, 204, 151); /* Border color on hover */
+    background-color: #f8f9fa; /* Background color on hover */
+    transition:  rgb(61, 204, 151) 0.3s; /* Smooth transition */
+   
+  }
+  img{
+    width: 50%;
+    height: 50%;
+  }
+
+.DonorCard {
+  width: 220px; /* Adjust width as needed */
+  height: 350px;
+  margin: 0 10px;
+  
+  
+  }
+.DonorCard:hover {
+  border: 4px solid  rgb(61, 204, 151); /* Thick border */
+  border-radius: 10px;
+  border-color: rgb(61, 204, 151); /* Border color on hover */
+  background-color: #f8f9fa; /* Background color on hover */
+  transition:  rgb(61, 204, 151) 0.3s; /* Smooth transition */
+ 
+}
+
+.card-title{
+  font-family: "Patrick Hand", cursive;
+  font-size: 30px;
+  color:rgb(61, 204, 151);
+}
+
+.card-title:hover{
+  text-decoration: none;
+}
+.card-container {
+   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+
+}
+
+.OrganizationCard img, .DonorCard img {
+  width: 50%; /* Adjust the width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 500px) {
+  .card-container {
+    min-width: 100px;
+  }
+}

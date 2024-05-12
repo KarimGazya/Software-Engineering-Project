@@ -1,0 +1,85 @@
+.website {
+  color: #3dcc97;
+}
+
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid;
+  border-color: #96a09c;
+}
+
+.reject {
+  background-color: #ab1411;
+  color: #ffffff;
+}
+
+.accept {
+  background-color: #07b547;
+  color: #ffffff;
+}
+
+.donate {
+  background-color: #3dcc97;
+  color: #ffffff;
+}
+
+.title {
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text {
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.icon {
+  margin: 8px;
+  margin-right: 50px;
+  color: #3dcc97;
+}
+
+.card-text {
+  font-size: 70px;
+}
+
+.choices {
+  margin-top: 90px;
+}
+
+.card {
+  margin-top: 900px;
+  background-color: #3dcc97;
+  color: #ffffff;
+  box-shadow: 5px 10px 40px 5px rgb(145, 146, 147);
+  border-radius: 90px;
+}
+.card:hover {
+  box-shadow: 5px 10px 40px 5px rgb(43, 45, 47);
+}
+
+.card-body {
+  text-align: center;
+}
+
+.nav-item :hover {
+  color: #098256;
+}
+
+.card {
+  margin-top: 30px;
+  cursor: pointer;
+}
+img {
+  width: 20%;
+}
+
+.header {
+  display: inline-block;
+}
+
+.container-fluid {
+  width: 1200px;
+}
