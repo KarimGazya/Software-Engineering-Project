@@ -58,7 +58,7 @@ function populateProfile() {
         tempData = JSON.parse(savedData);
     }
     document.getElementById("profile-pic").src = tempData.profile_image;
-    document.querySelector(".profile-title").innerText = tempData.first_name + tempData.last_name;
+    document.querySelector(".profile-title").innerText = tempData.first_name + " " + tempData.last_name;
     document.querySelector(".profile-email").innerText = tempData.email;
 }
 
@@ -266,7 +266,7 @@ logOutBtn.onclick = () => {
     logoutButton.addEventListener('click', () => {
         // Perform logout action
         localStorage.clear();
-        console.log('Logout');
+        window.location.href = 'LandingPage.html';
         // Close confirmation pop-up and modal backdrop
         document.body.removeChild(modalBackdrop);
         document.body.removeChild(confirmationBox);

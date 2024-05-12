@@ -1,0 +1,13 @@
+img {
+  width: 15%;
+}
+
+.card-select {
+  display: inline-block;
+  border: 2px solid;
+  border-color: #3dcc97;
+}
+
+.card-select {
+  display: none;
+}
