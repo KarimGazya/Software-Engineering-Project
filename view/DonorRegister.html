@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha384-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../style/DonorProfile.css" />
+    <link rel="stylesheet" href="../style/Login.css">
+  <title>Donor Register</title>
+  
+</head>
+<body>
+  <div id="root">
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a class="navbar-logo " href="/">Charity 
+          <i class="fab fa-typo3"></i>
+        </a>
+        <div class="menu-icon">
+          <i class="navbar-toggler-icon">
+
+          </i>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-links" href="Login.html">My Account</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="account-header">
+        <h1 class="account-title">Register Account</h1>
+        <div class="btn-container">
+            <button class="btn-save" onclick="handleSaveButtonClick()">Register</button>
+        </div>
+    </div>
+
+    <div class="account-edit">
+        <div class="input-container">
+            <label>First Name</label>
+            <input id="first-name" type="text" placeholder="First Name" >
+        </div>
+        <div class="input-container">
+            <label>Last Name</label>
+            <input id="last-name" type="text" placeholder="Last Name">
+        </div>
+    </div>
+
+    <div class="account-edit">
+        <div class="input-container">
+            <label>Email</label>
+            <input id="email" type="email" placeholder="Email" >
+        </div>
+        <div class="input-container">
+            <label>Phone Number</label>
+            <input id="phone-number" type="text" placeholder="Phone Number" >
+        </div>
+    </div>
+
+    <div class="gender-container">
+        <label for="gender">Gender:</label>
+        <input class="gender-radio" type="radio" name="gender">
+        <label class="gender-label" for="male">Male</label>
+        <input class="gender-radio" type="radio" name="gender" >
+        <label class="gender-label" for="female">Female</label>
+    </div>
+
+    <div class="account-edit">
+        <div class="input-container">
+            <label>Area</label>
+            <input id="area" type="text" placeholder="Area" >
+        </div>
+        <div class="input-container">
+            <label>Governorate</label>
+            <input id="governorate" type="text" placeholder="Governorate" >
+        </div>
+    </div>
+
+    <div class="account-edit">
+        <div class="input-container">
+            <label>Address</label>
+            <textarea id="address" placeholder="Address"></textarea>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

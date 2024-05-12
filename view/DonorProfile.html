@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Profile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../style/DonorProfile.css" />
+    <link rel="stylesheet" href="../style/index.css" />
+</head>
+<body>
+    
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#"
+      ><h1 class="title website">CHARITY</h1></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-nav"><p>Donor Profile</p></div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="category.html"
+            ><i class="icon fa-solid fa-house fa-lg"></i
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="DonorNotification.html"
+            ><i class="icon fa-regular fa-bell fa-xl"></i
+          ></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="DonorProfile.html"
+            ><i class="icon far fa-user fa-lg"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+</nav>
+
+    <br>
+    <br>
+    <br>
+
+    <div class = "container">
+      <div class = "profile">
+        <div class="profile-header">
+          <div class="profile-img-container">
+              <img src="../image/user.jpg" alt="" id="profile-pic">
+              <label for="input-pic" class="profile-camera">
+                  <i class="fa fa-camera" style="color: #fff;"></i>
+                  <input class="profile-upload" type="file" accept="image/jpg, image/jpeg, image/png" id="input-pic" style="display: none;">
+              </label>
+          </div>
+          <div class="profile-text-container">
+              <h1 class="profile-title"></h1>
+              <p class="profile-email"></p>
+          </div>
+        </div>      
+        <div class = "menu">
+            <button class="menu-link" id="account-btn"><i class="fa-solid fa-circle-user menu-icon"></i>Account</a>
+            <button class="menu-link" id="password-btn"><i class="fa-solid fa-lock menu-icon"></i>Change Password</a>
+            <button class="menu-link" id="select-role-btn"><i class="fa-solid fa-address-card menu-icon"></i>Select Role</a>
+            <button class="menu-link" id="log-out-btn"><i class="fa-solid fa-sign-out menu-icon"></i>Log Out</a>
+        </div>
+      </div>
+      <form class="account" id="form-id">
+
+      </form>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/78967f1e7f.js"
+      crossorigin="anonymous"
+    ></script>
+  
+    <script src="../logic/json.js"></script>
+    <script src="../logic/DonorProfile.js"></script>
+    
+</body>
+</html>
