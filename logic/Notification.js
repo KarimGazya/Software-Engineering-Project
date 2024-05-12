@@ -1,3 +1,5 @@
+console.log("lo");
+
 const unReadMessages = document.querySelectorAll('.unread');
 const unReadMessagesCount = document.getElementById('num-of-notif');
 const markAll = document.getElementById('mark-as-read');

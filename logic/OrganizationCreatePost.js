@@ -96,7 +96,7 @@ function getToysHTML() {
 
     <div class="account-edit">
         <div class="input-container" id="pdf-preview-container">
-            <img id="pic" src="" width="100%" height="100%"></img>
+            <img id="pic" src="../image/default.jpg" width="100%" height="100%"></img>
         </div>           
     </div>
 
@@ -159,7 +159,7 @@ function getMedicalSuppliesHTML() {
 
     <div class="account-edit">
         <div class="input-container" id="pdf-preview-container">
-            <img id="pic" src="" width="100%" height="100%"></img>
+            <img id="pic" src="../image/default.jpg" width="100%" height="100%"></img>
         </div>           
     </div>
 

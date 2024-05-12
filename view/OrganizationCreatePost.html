@@ -17,8 +17,8 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="DonorProfile.css" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../style/DonorProfile.css" />
+    <link rel="stylesheet" href="../style/index.css" />
 </head>
 <body>
     
@@ -67,11 +67,7 @@
       <div class = "profile">
         <div class="profile-header">
           <div class="profile-img-container">
-              <img src="user.jpg" alt="" id="profile-pic">
-              <label for="input-pic" class="profile-camera">
-                  <i class="fa fa-camera" style="color: #fff;"></i>
-                  <input class="profile-upload" type="file" accept="image/jpg, image/jpeg, image/png" id="input-pic" style="display: none;">
-              </label>
+            <h3 class="side-header">Choose Donation Category</h3>
           </div>
           <div class="profile-text-container">
               <h1 class="profile-title"></h1>
@@ -79,9 +75,12 @@
           </div>
         </div>      
         <div class = "menu">
-            <button class="menu-link" id="account-btn"><i class="fa-solid fa-circle-user menu-icon"></i>Account</a>
-            <button class="menu-link" id="password-btn"><i class="fa-solid fa-lock menu-icon"></i>Change Password</a>
-            <button class="menu-link" id="log-out-btn"><i class="fa-solid fa-sign-out menu-icon"></i>Log Out</a>          
+            <button class="menu-link" id="clothes-btn"><i class="fa-solid fa-shopping-bag menu-icon"></i>Clothes</a>
+            <button class="menu-link" id="toys-btn"><i class="fa-solid fa-car menu-icon"></i>Toys</a>
+            <button class="menu-link" id="food-btn"><i class="fa-solid fa-cutlery menu-icon"></i>Food</a>
+            <button class="menu-link" id="medical-supplies-btn"><i class="fa fa-hospital-o menu-icon"></i>Medical Supplies</a>
+            <button class="menu-link" id="school-supplies-btn"><i class="fa-solid fa-pencil menu-icon"></i>School Supplies</a>
+            <button class="menu-link" id="blood-donations-btn"><i class="fa-solid fa-medkit menu-icon"></i>Blood Donations</a>             
         </div>
       </div>
       <form class="account" id="form-id">
@@ -98,8 +97,7 @@
       crossorigin="anonymous"
     ></script>
   
-    <script src="json.js"></script>
-    <script src="OrganizationProfile.js"></script>
+    <script src="../logic/OrganizationCreatePost.js"></script>
     
 </body>
 </html>

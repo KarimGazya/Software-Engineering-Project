@@ -10,9 +10,9 @@ let tempData =
     "email": "alice.smith@example.com",
     "contact_number": "+1234567891",
     "password": "strongPassword456",
-    "profile_image": "user.jpg",
-    "document_verification_organization": "certificate.pdf",
-    "document_verification_teacher": "certificate.pdf",
+    "profile_image": "../image/user.jpg",
+    "document_verification_organization": "../assets/certificate.pdf",
+    "document_verification_teacher": "../assets/certificate.pdf",
     "organization_name": "FoodRecovery",
     "organization_type": "food donations",
 }
